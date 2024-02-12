@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>practice</title>
+   <meta name="description" content="welcome to our page.This is informational page">
+
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+   <link rel="manifest" href="favicon/site.webmanifest">
+   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+   
+   
+   <style>
+        #scrollexp{
+            position: fixed;
+            top:0;
+            width: 100%;
+            height: 60px;
+            
+        }
+
+        #scroll1{
+            height:800px;
+            background:linear-gradient(to top left,rgb(248, 210, 216),rgb(233, 9, 177),skyblue);
+           
+            
+        }
+
+        #scroll2{
+            height:700px;
+     
+        }
+
+        #scroll3{
+            height:600px;
+            
+        }
+
+        #scroll4{
+            height:500px;
+            padding-top:60px;
+        }
+
+         .nav-link.active{
+             background-color: rgb(58, 119, 119);
+             border-radius: 10px;
+        }
+
+        .nav-link{
+             font-size:20px;
+             width: 100px;
+             text-align: center;
+             height:43px;
+        }
+
+        .navbar-nav{
+             margin-left: 60px;
+             width:800px;
+             display: flex;
+             justify-content:space-between;
+        }
+
+        @media (max-width:991px){
+          .navbar-nav{
+               align-items: center;
+               width: 100%;
+               margin: 0;
+               background-color: thistle;
+          }
+
+          #navbarNavAltMarkup{
+                 position: absolute;
+                 top:100%;
+                 left:0;
+                 width: 100%;
+                 
+          }
+
+          #click{
+              margin-top: 20px;
+              margin-bottom: 10px;
+          }
+
+          #scroll1{
+               height: auto;
+          }
+
+          #scroll2{
+               height: auto;
+               width: auto;
+          }
+
+          #scroll3{
+            height:auto;
+            
+        }
+
+          #brd1{
+               width:100%;
+          }
+
+     }
+
+     .navbar-brand{
+          font-size:30px;
+     }
+
+     #click{
+        height:40px;
+        width:150px;
+        font-size: 20px;
+        background-color: rgb(41, 90, 139);
+        color:aliceblue;
+        border: none;
+        border-radius:6px;
+     }
+
+     .tyu{
+        border:1px solid black;
+        height: 300px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top:-80%;
+        left:30%;
+        background-color: rgba(0,0,0,0.8);
+        border-radius: 10px; 
+     }
+
+     #log input{
+          width: 300px;
+          text-indent:20px;
+     }
+
+     #log button{
+          width: 100px;
+          background-color: lightgreen;
+          border: none;
+     }
+
+     .hot{
+        top:40%;
+     }
+     .try{
+         margin-top: 20px;
+         font-size:17px;
+         font-weight: bold;
+         text-transform:capitalize;
+         width:140px;
+         height:39px;
+         background-color: rgb(80, 151, 115);
+         color:white;
+         border: none;
+         border-radius: 7px;
+     }
+     .conty{
+          height: 400px;
+          background-image: url(photos/pic5.JPG);
+          background-repeat: no-repeat;
+          background-size: 120% 140%;
+          
+
+     }
+     .col-md-7{
+          margin-top:170px;
+          margin-left:100px;
+     }
+     .col-md-7 h1{
+          color:rgb(240, 101, 129);
+     }
+
+     #fr{
+          color:darkblue;
+          font-size: 22px;
+          padding-right: 10px;
+     }
+     #ty{
+          font-size: 22px;
+          padding-right: 10px;
+          color: lightsalmon;
+     }
+     #tk{
+          font-size: 22px;
+          padding-right: 10px;
+          color: springgreen; 
+     }
+
+     #ti h1{
+          text-decoration: underline;
+          text-transform: capitalize;
+          color: paleturquoise;
+     }
+
+
+     .navbar-brand{
+          font-weight: bold;
+          text-transform: uppercase;
+          color:rgb(23, 3, 150);
+     }
+
+     #ti p{
+          font-size:20px;
+          color: rgb(252, 213, 252);
+     }
+
+     .img-fluid.rounded-circle{
+               height: 400px;
+               width: 400px;
+     }
+
+     @media (max-width:575px){
+            html,body{
+                 height: 100%;
+                 width: 100%;
+                 margin: 0px;
+                 padding: 0px;
+                 overflow-x: hidden;
+            }
+     }
+
+     #same h1{
+          text-decoration: underline;
+          text-transform: capitalize;
+          color:whitesmoke;
+     }
+
+     #same p{
+          font-size:20px;
+          color: aliceblue;
+     }
+
+     #same i{
+          font-size: 22px;
+          padding-right:9px;
+     }
+
+     #brd1{
+          border: 7px solid black;
+          animation-name: bordercolormix;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          width: 40%;
+          text-transform: capitalize;
+          font-size: 20px;
+          border-radius: 10px;
+          background-color:rgba(255,255,255,0.4);
+          
+     }
+
+     #brd2{
+          border: 7px solid black;
+          animation-name: bordercolormix;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          width: 40%;
+          text-transform: capitalize;
+          font-size: 20px;
+          border-radius: 10px;
+          background-color:rgba(255,255,255,0.4);
+     }
+
+     #brd3{
+          border: 5px solid black;
+          animation-name: bordercolormix;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          width: 50%;
+          text-transform: capitalize;
+          font-size: 20px;
+          border-radius: 10px;
+          background-color:rgba(255,255,255,0.4);
+     }
+
+     @keyframes bordercolormix{
+             0%{border-color: black;}
+             10%{border-color: darkorchid;}
+             20%{border-color: springgreen;}
+             30%{border-color: dodgerblue;}
+             40%{border-color: lightgreen;}
+             50%{border-color: lime;}
+             60%{border-color: seashell;}
+             70%{border-color: silver;}
+             80%{border-color: aquamarine;}
+             90%{border-color: teal;}
+             100%{border-color: thistle;}
+     }
+
+     #brd1:hover{
+          background-color:rgba(0,0,0,0.5);
+          cursor:pointer;
+          box-shadow: 12px 10px 10px black;
+     }
+
+     #brd2:hover{
+          background-color:rgba(0,0,0,0.5);
+          box-shadow: 12px 10px 10px black;
+          cursor:pointer;
+     }
+
+     #brd3:hover{
+          background-color:rgba(0,0,0,0.5);
+          box-shadow: 12px 10px 10px black;
+          cursor:pointer;
+     }
+
+     @media (max-width:800px){
+            #brd1{
+                width: auto;
+                margin: auto;
+            }
+
+            #brd2{
+                width: auto;
+                margin: auto;
+            }
+
+            #brd3{
+                width: auto;
+                margin: auto;
+            }
+     }
+
+     
+     
+     
+          
+   </style>
+   
+  
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#scrollexp">
+        <div class="conty">
+     <nav class="navbar navbar-expand-lg bg-light" id="scrollexp">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">protfolio</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#scroll1">About</a>
+                <a class="nav-link" href="#scroll2">Project</a>
+                <a class="nav-link" href="#scroll3">Works</a>
+                <a class="nav-link" href="#scroll4">Contact</a>
+                <button id="click">Buy Now</button>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        </nav>  
+             <div class="container-fluid">
+                   <div class="row">
+                        <div class="col-md-7 col-sm-7 col-7">
+                             <h1>hi! i am tushar.welcome to my page.</h1>
+                            <button class="try">download CV</button>
+                        </div>
+                   </div>
+             </div>
+        </div>
+ 
+   <div class="container-fluid" id="scroll1">
+        <div class="row">
+             <div class="col-md-6 col-sm-6 offset-md-1 offset-sm-1 mt-5" id="ti">
+                  <h1 class="text-center">my qualification</h1>
+                  <p class="text-center"><i class="fa-solid fa-bookmark" id="fr"></i>i passedout my tenth in 2014 agrigate with 60% marks from panchayat high school Bhimtali.</p>
+                  <p class="text-center"><i class="fa-solid fa-bookmark" id="ty"></i>then i have complited my intermideate in 2016 fron Meghasan college with 49% marks.</p>
+                  <p class="text-center"><i class="fa-solid fa-bookmark" id="tk"></i>then i have complited Bechlore in computer application in 2019 from ABA college with 69% marks.</p>
+                  
+             </div>
+
+             <div class="col-md-4 col-sm-4 offset-md-1 off-set-sm-1 mt-5">
+                  <img src="photos/pic4.JPG" class="img-fluid rounded">
+             </div>
+        </div>
+          
+      <div class="row">
+           <div class="col-md-4 col-sm-4 offset-1 mx-0 my-4">
+               <img src="photos/pic1.JPG" class="img-fluid rounded-circle">
+           </div>           
+
+          <div class="col-md-6 col-sm-6 offset-md-1 offset-sm-1 mt-4" id="same">
+               <h1 class="text-center">my skills</h1>
+               <p><i class="fa-solid fa-circle-arrow-right"></i>i have excellent communication skills in English,Hindi.</p>
+               <p><i class="fa-solid fa-circle-arrow-right"></i>i know HTML5,CSS3 and Javascript.i have also knowledge about some frontend library and frameworks like React,Bootstrap,Angularjs,Nextjs.</p>
+               <p><i class="fa-solid fa-circle-arrow-right"></i>now i am learning nodejs,mongodg for build a fullstack application.</p>
+          </div>
+
+      </div>
+   </div>
+      
+          <div class="container bg-info mt-3 mb-3 rounded" id="scroll2">
+                <div class="row">
+                     <div class="col-md-6 py-5 my-4 offset-md-1 text-center  text-light" id="brd1">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus consectetur eum fugiat dicta ipsa mollitia officiis sunt iure amet atque, tempore architecto ex corrupti accusamus earum obcaecati beatae quo illo.
+                     </div>
+                      <div class="col-md-6 py-5 my-4 text-center text-light offset-md-1" id="brd2">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe quaerat in beatae sequi, facilis ea, tempora deserunt deleniti doloribus ducimus ipsum. Adipisci sapiente nemo suscipit cum consequatur! Quasi hic ea eligendi atque expedita unde optio porro laborum voluptate, rerum natus quia asperiores obcaecati ex maxime suscipit minima reprehenderit sapiente.
+                      </div>
+                      <div class="col-md-5 my-2 offset-md-3 text-center text-light" id="brd3">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quod reprehenderit exercitationem. Provident saepe ad, quasi eaque voluptate optio blanditiis?
+                      </div>
+                </div>
+          </div>
+               
+    
+
+   
+   <div class="container-fluid bg-danger d-lg-flex" id="scroll3">
+        <div class="row offset-1">
+             <div class="col-7">
+                 <img src="photos/pic6.jpg" alt="" class="img-fluid mx-3 my-3">
+             </div>
+             <div class="col-5">
+               <img src="photos/pic7.jpg" alt="" class="img-fluid my-4">
+             </div>
+             <div class="col-6 offset-3">
+               <img src="photos/pic8.jpg" alt="" class="img-fluid">
+             </div>
+        </div>
+
+        <div class="row offset-1">
+              <div class="col-12">
+                    <h1 class="mt-5">my works</h1>
+                    <p class="pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel iure, amet beatae cupiditate odio voluptatem blanditiis soluta! Enim iste ut deserunt atque alias vero suscipit voluptas, voluptatem ipsum amet asperiores culpa fuga aut exercitationem doloremque.</p>
+              </div>
+        </div>
+       
+   </div>
+   <div class="container-fluid" id="scroll4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus accusamus numquam. Pariatur quos ab magni! Accusamus quibusdam, suscipit magnam placeat officia rerum. At id sunt ex laboriosam minima natus doloremque consequatur dicta possimus. Laborum quidem obcaecati temporibus repudiandae! Illo dolor corporis eaque vel quibusdam mollitia odit sint quos pariatur dolorem tenetur quas animi, quasi vero commodi repellat, molestiae rerum enim non. Minus blanditiis quaerat quos maiores laborum expedita perspiciatis natus beatae necessitatibus est dolorem sequi rerum aperiam libero voluptas, culpa aliquam vero maxime amet esse consequatur asperiores itaque! Voluptatibus optio ullam at nulla, suscipit unde doloremque debitis doloribus tenetur nihil. Aliquam dignissimos ducimus quod pariatur sit laboriosam deserunt voluptas culpa deleniti vero dolorum voluptatem eius modi minima accusantium perspiciatis, sapiente neque facere nulla beatae, asperiores distinctio, nobis saepe quae! Dolore reprehenderit quas quaerat alias totam, temporibus neque unde pariatur, corrupti vel autem inventore a eaque in facere nobis mollitia ipsa beatae eius? Modi excepturi asperiores earum alias delectus, doloribus nulla, sequi eius, eos itaque quaerat? Ipsam at provident doloremque pariatur explicabo odio quam eos, quaerat atque iste nulla nostrum neque ipsum illo molestiae labore alias impedit dolore sunt ab excepturi minus asperiores iure eaque? Soluta perspiciatis numquam ipsa quidem consectetur? Officia ab reiciendis nobis doloremque veritatis aspernatur qui. Possimus error odio quod aliquid nostrum ipsam, amet id porro provident distinctio ad molestiae natus sequi officiis modi incidunt ut at non quam accusantium nulla voluptate soluta! Consequuntur officiis laboriosam repudiandae, voluptatem dolorum reprehenderit. Doloribus ad deserunt qui enim! Consectetur mollitia nulla provident sed fugiat deserunt, ratione a omnis dolor quis tenetur pariatur quia ea. Temporibus at assumenda explicabo molestiae distinctio ab aperiam quisquam ea, quaerat ipsam nobis natus, eos cumque iure animi aliquam libero tempore dicta rem recusandae soluta cupiditate fugiat minima accusamus? Quo aperiam quod omnis dignissimos, eligendi modi!
+       
+   </div>
+
+       <form id="log" class="tyu">
+             <input type="text" placeholder="UserName...">
+             <input type="text" placeholder="Password...">
+              
+            <button>login</button>
+       </form>
+
+
+       
+       <script src="JAVA.JS"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+   
+   
+</body>
+</html>
